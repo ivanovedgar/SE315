@@ -1,0 +1,125 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (130.0ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (110.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "surname" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (134.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (97.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131129134730)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (142.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (142.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131129223409)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131129223409)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131129223409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "name" varchar(255), "surname" varchar(255), "email" varchar(255), "DOB" date, "telephoneNumber" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131129223409"]]
+  [1m[36m (160.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (130.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "name" varchar(255), "surname" varchar(255), "email" varchar(255), "DOB" date, "telephoneNumber" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (100.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (120.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (100.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131129223409')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20131129223409)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "users"
+  [1m[36mSQL (10.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20131129223409'[0m
+  [1m[35m (130.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131129223409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (10.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "name" varchar(255), "surname" varchar(255), "email" varchar(255), "DOB" date, "telephoneNumber" integer, "address" varchar(255), "currentLicenseType" varchar(255), "licensePeriod" integer, "occupation" varchar(255), "vehicleRegistration" varchar(255), "estimatedAnnualMileage" integer, "estimatedVehicleValue" integer, "typicalParkingLocation" varchar(255), "policyStartDate" date, "numberOfIncidents" integer, "policyExcess" integer, "breakdownCover" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131129223409"]]
+  [1m[36m (145.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-29 23:54:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>"", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>""}}
+Unpermitted parameters: title, email, DOB, telephoneNumber, address, currentLicenseType, licensePeriod, occupation, vehicleRegistration, estimatedAnnualMileage, estimatedVehicleValue, typicalParkingLocation
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (30.0ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "surname", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 29 Nov 2013 23:54:18 UTC +00:00], ["name", "Edgar"], ["surname", "Ivanov"], ["updated_at", Fri, 29 Nov 2013 23:54:18 UTC +00:00]]
+  [1m[35m (85.0ms)[0m  commit transaction
+Completed 201 Created in 200ms (Views: 10.0ms | ActiveRecord: 115.0ms)
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-29 23:55:54 +0000
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>"", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>""}}
+Unpermitted parameters: email, DOB, telephoneNumber, address, currentLicenseType, licensePeriod, occupation, vehicleRegistration, estimatedAnnualMileage, estimatedVehicleValue, typicalParkingLocation
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "users" ("created_at", "name", "surname", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 29 Nov 2013 23:55:54 UTC +00:00], ["name", "Edgar"], ["surname", "Ivanov"], ["title", "Mr"], ["updated_at", Fri, 29 Nov 2013 23:55:54 UTC +00:00]]
+  [1m[36m (100.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 138ms (Views: 5.0ms | ActiveRecord: 102.5ms)
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-29 23:55:58 +0000
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>"", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>""}}
+Unpermitted parameters: email, DOB, telephoneNumber, address, currentLicenseType, licensePeriod, occupation, vehicleRegistration, estimatedAnnualMileage, estimatedVehicleValue, typicalParkingLocation
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "surname", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 29 Nov 2013 23:55:58 UTC +00:00], ["name", "Edgar"], ["surname", "Ivanov"], ["title", "Mr"], ["updated_at", Fri, 29 Nov 2013 23:55:58 UTC +00:00]]
+  [1m[35m (107.5ms)[0m  commit transaction
+Completed 201 Created in 133ms (Views: 0.0ms | ActiveRecord: 110.0ms)
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-30 00:10:28 +0000
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>"", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"--", "telephoneNumber"=>"07531142133", "address"=>"", "currentLicenseType"=>"", "licensePeriod"=>"", "occupation"=>"", "vehicleRegistration"=>"", "estimatedAnnualMileage"=>"", "estimatedVehicleValue"=>"", "typicalParkingLocation"=>""}}
+Unpermitted parameters: email
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("address", "created_at", "currentLicenseType", "name", "occupation", "surname", "telephoneNumber", "title", "typicalParkingLocation", "updated_at", "vehicleRegistration") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["created_at", Sat, 30 Nov 2013 00:10:28 UTC +00:00], ["currentLicenseType", ""], ["name", "Edgar"], ["occupation", ""], ["surname", "Ivanov"], ["telephoneNumber", 7531142133], ["title", "Mr"], ["typicalParkingLocation", ""], ["updated_at", Sat, 30 Nov 2013 00:10:28 UTC +00:00], ["vehicleRegistration", ""]]
+  [1m[36m (108.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 146ms (Views: 3.0ms | ActiveRecord: 110.0ms)
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-30 00:17:41 +0000
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"1991-05-16", "telephoneNumber"=>"07531142133", "address"=>"30 Northagate Street", "currentLicenseType"=>"Full", "licensePeriod"=>"3", "occupation"=>"Occupation 1", "vehicleRegistration"=>"365RTG", "estimatedAnnualMileage"=>"1000", "estimatedVehicleValue"=>"6000", "typicalParkingLocation"=>"In a Garage", "policyStartDate"=>"2013-11-29", "numberOfIncidents"=>"1", "policyExcess"=>"250", "breakdownCover"=>"Roadside", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"1991-05-16", "telephoneNumber"=>"07531142133", "address"=>"30 Northagate Street", "currentLicenseType"=>"Full", "licensePeriod"=>"3", "occupation"=>"Occupation 1", "vehicleRegistration"=>"365RTG", "estimatedAnnualMileage"=>"1000", "estimatedVehicleValue"=>"6000", "typicalParkingLocation"=>"In a Garage", "policyStartDate"=>"2013-11-29", "numberOfIncidents"=>"1", "policyExcess"=>"250", "breakdownCover"=>"Roadside"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (17.0ms)[0m  [1mINSERT INTO "users" ("DOB", "address", "breakdownCover", "created_at", "currentLicenseType", "email", "estimatedAnnualMileage", "estimatedVehicleValue", "licensePeriod", "name", "numberOfIncidents", "occupation", "policyExcess", "policyStartDate", "surname", "telephoneNumber", "title", "typicalParkingLocation", "updated_at", "vehicleRegistration") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["DOB", Thu, 16 May 1991], ["address", "30 Northagate Street"], ["breakdownCover", "Roadside"], ["created_at", Sat, 30 Nov 2013 00:17:41 UTC +00:00], ["currentLicenseType", "Full"], ["email", "zajjac@yandex.ru"], ["estimatedAnnualMileage", 1000], ["estimatedVehicleValue", 6000], ["licensePeriod", 3], ["name", "Edgar"], ["numberOfIncidents", 1], ["occupation", "Occupation 1"], ["policyExcess", 250], ["policyStartDate", Fri, 29 Nov 2013], ["surname", "Ivanov"], ["telephoneNumber", 7531142133], ["title", "Mr"], ["typicalParkingLocation", "In a Garage"], ["updated_at", Sat, 30 Nov 2013 00:17:41 UTC +00:00], ["vehicleRegistration", "365RTG"]]
+  [1m[35m (100.0ms)[0m  commit transaction
+Completed 201 Created in 153ms (Views: 2.0ms | ActiveRecord: 118.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-30 00:22:16 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 4792ms (Views: 4791.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users.json" for 192.168.1.20 at 2013-11-30 01:12:10 +0000
+Processing by UsersController#create as JSON
+  Parameters: {"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"1991-05-16", "telephoneNumber"=>"07531142133", "address"=>"30 Northagate Street", "currentLicenseType"=>"Full", "licensePeriod"=>"3", "occupation"=>"Occupation 1", "vehicleRegistration"=>"365RTG", "estimatedAnnualMileage"=>"1000", "estimatedVehicleValue"=>"6000", "typicalParkingLocation"=>"In a Garage", "policyStartDate"=>"2013-11-29", "numberOfIncidents"=>"1", "policyExcess"=>"250", "breakdownCover"=>"Roadside", "user"=>{"title"=>"Mr", "name"=>"Edgar", "surname"=>"Ivanov", "email"=>"zajjac@yandex.ru", "DOB"=>"1991-05-16", "telephoneNumber"=>"07531142133", "address"=>"30 Northagate Street", "currentLicenseType"=>"Full", "licensePeriod"=>"3", "occupation"=>"Occupation 1", "vehicleRegistration"=>"365RTG", "estimatedAnnualMileage"=>"1000", "estimatedVehicleValue"=>"6000", "typicalParkingLocation"=>"In a Garage", "policyStartDate"=>"2013-11-29", "numberOfIncidents"=>"1", "policyExcess"=>"250", "breakdownCover"=>"Roadside"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (39.0ms)[0m  INSERT INTO "users" ("DOB", "address", "breakdownCover", "created_at", "currentLicenseType", "email", "estimatedAnnualMileage", "estimatedVehicleValue", "licensePeriod", "name", "numberOfIncidents", "occupation", "policyExcess", "policyStartDate", "surname", "telephoneNumber", "title", "typicalParkingLocation", "updated_at", "vehicleRegistration") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["DOB", Thu, 16 May 1991], ["address", "30 Northagate Street"], ["breakdownCover", "Roadside"], ["created_at", Sat, 30 Nov 2013 01:12:10 UTC +00:00], ["currentLicenseType", "Full"], ["email", "zajjac@yandex.ru"], ["estimatedAnnualMileage", 1000], ["estimatedVehicleValue", 6000], ["licensePeriod", 3], ["name", "Edgar"], ["numberOfIncidents", 1], ["occupation", "Occupation 1"], ["policyExcess", 250], ["policyStartDate", Fri, 29 Nov 2013], ["surname", "Ivanov"], ["telephoneNumber", 7531142133], ["title", "Mr"], ["typicalParkingLocation", "In a Garage"], ["updated_at", Sat, 30 Nov 2013 01:12:10 UTC +00:00], ["vehicleRegistration", "365RTG"]]
+  [1m[36m (72.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 120ms (Views: 1.0ms | ActiveRecord: 111.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-30 01:22:18 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)

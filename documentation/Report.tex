@@ -1,0 +1,55 @@
+ \documentclass[10pt,a4paper,headinclude=true,twoside]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{pdflscape} % dlia landscape orientation 
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead[LE,RO]{\slshape  \rightmark} %should be used with "twoside" in documentcalss. Delat headeri kak v knigah: vneshnije storoni sovpadajut drug s drugom. 
+\fancyhead[LO,RE]{\slshape  \leftmark}
+\fancyfoot[C]{\thepage}
+\lhead{}
+\rhead{SE31520 Assignment: Enhancing the CS-Alumni Application}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\title{SE31520: Car Insurance System}
+\author{Edgar Ivanov\\ edi@aber.ac.uk \\ Department of Computer Science, Aberystwyth University}
+\date{\today}
+\maketitle
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\tableofcontents
+
+\chapter{CSA Application}
+\subsubsection{In IS}
+When I joined the IS department I was surprised by the amount of people working there. There should be around 60 people working in the department to support the University's library and IT stuff. I don't think that students and staff realize how much work is done behind the scenes to ensure that university functions. There is a team supporting networking; the one that develops new applications, other people deal with the books; I was placed within the team providing computer hardware and software support. I have had some previous experience in supporting MS Windows OS for the friends and the family as well as having hardware knowledge since I have built a few computers from the components before. I think I was placed within this team because I have expressed a deep interest in the computer hardware on the interview day.
+
+\chapter{RESTful Client}
+\chapter{Testing}
+\chapter{Evaluation}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibl}
+
+\end{document}

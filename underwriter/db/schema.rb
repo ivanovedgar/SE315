@@ -11,11 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131129134730) do
+ActiveRecord::Schema.define(version: 20131129223409) do
 
   create_table "users", force: true do |t|
+    t.string   "title"
     t.string   "name"
     t.string   "surname"
+    t.string   "email"
+    t.date     "DOB"
+    t.integer  "telephoneNumber"
+    t.string   "address"
+    t.string   "currentLicenseType"
+    t.integer  "licensePeriod"
+    t.string   "occupation"
+    t.string   "vehicleRegistration"
+    t.integer  "estimatedAnnualMileage"
+    t.integer  "estimatedVehicleValue"
+    t.string   "typicalParkingLocation"
+    t.date     "policyStartDate"
+    t.integer  "numberOfIncidents"
+    t.integer  "policyExcess"
+    t.string   "breakdownCover"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
