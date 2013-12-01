@@ -1,0 +1,1 @@
+json.extract! @user, :title, :name, :surname, :DOB, :telephoneNumber, :address, :currentLicenseType, :licensePeriod, :occupation, :vehicleRegistration, :estimatedAnnualMileage, :estimatedVehicleValue, :typicalParkingLocation, :policyStartDate, :numberOfIncidents, :policyExcess, :breakdownCover, :created_at, :updated_at

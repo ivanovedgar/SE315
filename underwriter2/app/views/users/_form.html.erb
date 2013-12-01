@@ -1,0 +1,85 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :surname %><br>
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    <%= f.label :DOB %><br>
+    <%= f.date_select :DOB %>
+  </div>
+  <div class="field">
+    <%= f.label :telephoneNumber %><br>
+    <%= f.number_field :telephoneNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :currentLicenseType %><br>
+    <%= f.text_field :currentLicenseType %>
+  </div>
+  <div class="field">
+    <%= f.label :licensePeriod %><br>
+    <%= f.number_field :licensePeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation %><br>
+    <%= f.text_field :occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicleRegistration %><br>
+    <%= f.text_field :vehicleRegistration %>
+  </div>
+  <div class="field">
+    <%= f.label :estimatedAnnualMileage %><br>
+    <%= f.number_field :estimatedAnnualMileage %>
+  </div>
+  <div class="field">
+    <%= f.label :estimatedVehicleValue %><br>
+    <%= f.number_field :estimatedVehicleValue %>
+  </div>
+  <div class="field">
+    <%= f.label :typicalParkingLocation %><br>
+    <%= f.text_field :typicalParkingLocation %>
+  </div>
+  <div class="field">
+    <%= f.label :policyStartDate %><br>
+    <%= f.date_select :policyStartDate %>
+  </div>
+  <div class="field">
+    <%= f.label :numberOfIncidents %><br>
+    <%= f.number_field :numberOfIncidents %>
+  </div>
+  <div class="field">
+    <%= f.label :policyExcess %><br>
+    <%= f.number_field :policyExcess %>
+  </div>
+  <div class="field">
+    <%= f.label :breakdownCover %><br>
+    <%= f.text_field :breakdownCover %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

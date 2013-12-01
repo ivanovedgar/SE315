@@ -1,0 +1,59 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Dob</th>
+      <th>Telephonenumber</th>
+      <th>Address</th>
+      <th>Currentlicensetype</th>
+      <th>Licenseperiod</th>
+      <th>Occupation</th>
+      <th>Vehicleregistration</th>
+      <th>Estimatedannualmileage</th>
+      <th>Estimatedvehiclevalue</th>
+      <th>Typicalparkinglocation</th>
+      <th>Policystartdate</th>
+      <th>Numberofincidents</th>
+      <th>Policyexcess</th>
+      <th>Breakdowncover</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.title %></td>
+        <td><%= user.name %></td>
+        <td><%= user.surname %></td>
+        <td><%= user.DOB %></td>
+        <td><%= user.telephoneNumber %></td>
+        <td><%= user.address %></td>
+        <td><%= user.currentLicenseType %></td>
+        <td><%= user.licensePeriod %></td>
+        <td><%= user.occupation %></td>
+        <td><%= user.vehicleRegistration %></td>
+        <td><%= user.estimatedAnnualMileage %></td>
+        <td><%= user.estimatedVehicleValue %></td>
+        <td><%= user.typicalParkingLocation %></td>
+        <td><%= user.policyStartDate %></td>
+        <td><%= user.numberOfIncidents %></td>
+        <td><%= user.policyExcess %></td>
+        <td><%= user.breakdownCover %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

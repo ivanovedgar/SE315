@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @user.title %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @user.surname %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @user.DOB %>
+</p>
+
+<p>
+  <strong>Telephonenumber:</strong>
+  <%= @user.telephoneNumber %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong>Currentlicensetype:</strong>
+  <%= @user.currentLicenseType %>
+</p>
+
+<p>
+  <strong>Licenseperiod:</strong>
+  <%= @user.licensePeriod %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @user.occupation %>
+</p>
+
+<p>
+  <strong>Vehicleregistration:</strong>
+  <%= @user.vehicleRegistration %>
+</p>
+
+<p>
+  <strong>Estimatedannualmileage:</strong>
+  <%= @user.estimatedAnnualMileage %>
+</p>
+
+<p>
+  <strong>Estimatedvehiclevalue:</strong>
+  <%= @user.estimatedVehicleValue %>
+</p>
+
+<p>
+  <strong>Typicalparkinglocation:</strong>
+  <%= @user.typicalParkingLocation %>
+</p>
+
+<p>
+  <strong>Policystartdate:</strong>
+  <%= @user.policyStartDate %>
+</p>
+
+<p>
+  <strong>Numberofincidents:</strong>
+  <%= @user.numberOfIncidents %>
+</p>
+
+<p>
+  <strong>Policyexcess:</strong>
+  <%= @user.policyExcess %>
+</p>
+
+<p>
+  <strong>Breakdowncover:</strong>
+  <%= @user.breakdownCover %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
