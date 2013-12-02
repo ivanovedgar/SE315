@@ -2,7 +2,13 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   skip_before_action :verify_authenticity_token
   
-  def get_quote
+  def getquote
+  	  @user = User.find(:id)
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @user.quote}
+    end
+  	  
   end
   # GET /users
   # GET /users.json
