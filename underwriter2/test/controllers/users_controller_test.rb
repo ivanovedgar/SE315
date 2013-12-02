@@ -18,7 +18,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should create user" do
     assert_difference('User.count') do
-      post :create, user: { DOB: @user.DOB, address: @user.address, breakdownCover: @user.breakdownCover, currentLicenseType: @user.currentLicenseType, estimatedAnnualMileage: @user.estimatedAnnualMileage, estimatedVehicleValue: @user.estimatedVehicleValue, licensePeriod: @user.licensePeriod, name: @user.name, numberOfIncidents: @user.numberOfIncidents, occupation: @user.occupation, policyExcess: @user.policyExcess, policyStartDate: @user.policyStartDate, surname: @user.surname, telephoneNumber: @user.telephoneNumber, title: @user.title, typicalParkingLocation: @user.typicalParkingLocation, vehicleRegistration: @user.vehicleRegistration }
+      post :create, user: { DOB: @user.DOB, address: @user.address, breakdownCover: @user.breakdownCover, currentLicenseType: @user.currentLicenseType, estimatedAnnualMileage: @user.estimatedAnnualMileage, estimatedVehicleValue: @user.estimatedVehicleValue, licensePeriod: @user.licensePeriod, name: @user.name, numberOfIncidents: @user.numberOfIncidents, occupation: @user.occupation, policyExcess: @user.policyExcess, policyStartDate: @user.policyStartDate, quote: @user.quote, surname: @user.surname, telephoneNumber: @user.telephoneNumber, title: @user.title, typicalParkingLocation: @user.typicalParkingLocation, vehicleRegistration: @user.vehicleRegistration }
     end
 
     assert_redirected_to user_path(assigns(:user))
@@ -35,7 +35,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should update user" do
-    patch :update, id: @user, user: { DOB: @user.DOB, address: @user.address, breakdownCover: @user.breakdownCover, currentLicenseType: @user.currentLicenseType, estimatedAnnualMileage: @user.estimatedAnnualMileage, estimatedVehicleValue: @user.estimatedVehicleValue, licensePeriod: @user.licensePeriod, name: @user.name, numberOfIncidents: @user.numberOfIncidents, occupation: @user.occupation, policyExcess: @user.policyExcess, policyStartDate: @user.policyStartDate, surname: @user.surname, telephoneNumber: @user.telephoneNumber, title: @user.title, typicalParkingLocation: @user.typicalParkingLocation, vehicleRegistration: @user.vehicleRegistration }
+    patch :update, id: @user, user: { DOB: @user.DOB, address: @user.address, breakdownCover: @user.breakdownCover, currentLicenseType: @user.currentLicenseType, estimatedAnnualMileage: @user.estimatedAnnualMileage, estimatedVehicleValue: @user.estimatedVehicleValue, licensePeriod: @user.licensePeriod, name: @user.name, numberOfIncidents: @user.numberOfIncidents, occupation: @user.occupation, policyExcess: @user.policyExcess, policyStartDate: @user.policyStartDate, quote: @user.quote, surname: @user.surname, telephoneNumber: @user.telephoneNumber, title: @user.title, typicalParkingLocation: @user.typicalParkingLocation, vehicleRegistration: @user.vehicleRegistration }
     assert_redirected_to user_path(assigns(:user))
   end
 

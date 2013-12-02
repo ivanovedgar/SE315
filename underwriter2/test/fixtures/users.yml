@@ -4,7 +4,7 @@ one:
   title: MyString
   name: MyString
   surname: MyString
-  DOB: 2013-11-30
+  DOB: 2013-12-02
   telephoneNumber: 1
   address: MyString
   currentLicenseType: MyString
@@ -14,16 +14,17 @@ one:
   estimatedAnnualMileage: 1
   estimatedVehicleValue: 1
   typicalParkingLocation: MyString
-  policyStartDate: 2013-11-30
+  policyStartDate: 2013-12-02
   numberOfIncidents: 1
   policyExcess: 1
   breakdownCover: MyString
+  quote: 1
 
 two:
   title: MyString
   name: MyString
   surname: MyString
-  DOB: 2013-11-30
+  DOB: 2013-12-02
   telephoneNumber: 1
   address: MyString
   currentLicenseType: MyString
@@ -33,7 +34,8 @@ two:
   estimatedAnnualMileage: 1
   estimatedVehicleValue: 1
   typicalParkingLocation: MyString
-  policyStartDate: 2013-11-30
+  policyStartDate: 2013-12-02
   numberOfIncidents: 1
   policyExcess: 1
   breakdownCover: MyString
+  quote: 1

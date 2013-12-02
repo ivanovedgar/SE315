@@ -20,6 +20,7 @@
       <th>Numberofincidents</th>
       <th>Policyexcess</th>
       <th>Breakdowncover</th>
+      <th>Quote</th>
       <th></th>
       <th></th>
       <th></th>
@@ -46,6 +47,7 @@
         <td><%= user.numberOfIncidents %></td>
         <td><%= user.policyExcess %></td>
         <td><%= user.breakdownCover %></td>
+        <td><%= user.quote %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

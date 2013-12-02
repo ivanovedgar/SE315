@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131130200859) do
+ActiveRecord::Schema.define(version: 20131202132700) do
 
   create_table "users", force: true do |t|
     t.string   "title"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20131130200859) do
     t.integer  "numberOfIncidents"
     t.integer  "policyExcess"
     t.string   "breakdownCover"
+    t.integer  "quote"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
