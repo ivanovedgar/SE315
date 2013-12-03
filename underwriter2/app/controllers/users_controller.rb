@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
   
   def getquote
-  	  @user = User.find(:id)
+   @user = User.find(params[:user_id])
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user.quote}
