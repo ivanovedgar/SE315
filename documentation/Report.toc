@@ -1,5 +1,0 @@
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {chapter}{\numberline {2}Architecture of the underwriter}{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}Architecture of the RESTful broker}{6}{chapter.3}
-\contentsline {chapter}{\numberline {4}Test strategy}{7}{chapter.4}
-\contentsline {chapter}{\numberline {5}Self-evaluation}{8}{chapter.5}
