@@ -1,3 +1,8 @@
+/documentation/*.aux
+/documentation/*.log
+/documentation/*.out
+/documentation/*.gz
+/documentation/*.toc
 *.rbc
 *.sassc
 .sass-cache
