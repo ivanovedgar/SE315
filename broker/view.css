@@ -1,3 +1,14 @@
+
+
+.form_container quote { 
+background: #F5EBFF;
+border-bottom: 0.1em groove gray;
+border-left: 0.3em solid gray;
+border-right: 0.1em groove gray;
+border-top: 0.1em groove gray;
+margin: 0.4em 0px;
+padding: 0.3em;
+}
 #menu a:hover {
     color: #F90;
     background-color: #FFF;
