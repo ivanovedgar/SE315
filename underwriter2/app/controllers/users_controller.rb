@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    @user.quote = rand(1000-5000)
+    @user.quote = rand(1000..5000)
 
     respond_to do |format|
       if @user.save
