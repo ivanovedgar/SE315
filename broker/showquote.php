@@ -1,3 +1,32 @@
+<?php
+
+$userID = $_POST[quotationNumber];
+$email = $_POST[email];
+
+$getQuoteURL = "http://192.168.1.2:3000/users/$userID/getquote.json";
+$quote = curl_get($getQuoteURL);
+
+function curl_get($url) //retrieves quote for the user that was created
+{
+	$ch = curl_init();
+	
+	// set URL and other appropriate options
+	curl_setopt($ch, CURLOPT_HEADER, false);
+	curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+	curl_setopt($ch, CURLOPT_VERBOSE, true);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+	
+	// grab URL and pass it to the browser
+	$response =  curl_exec($ch);
+	
+	// close cURL resource, and free up system resources
+	curl_close($ch);
+	return $response;
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,11 +37,8 @@
 <script type="text/javascript" src="calendar.js"></script>
 </head>
 
-
-
 <body id="main_body" >
-	
-	
+		
 <div id="menu">
 <ul>
 	<li><a href="index.php" title="Will open home page">Home</a></li>
@@ -25,10 +51,8 @@
 	<div id="form_container">
 	
 		<h1><a>Quote</a></h1>
-		<p>Below is your unique quotation number, please take a not of it if you wold like to retrieve your quote premium in the future.</p>
-		<p>Your unique quotation number is: <?php echo $_POST[identifier]; ?></p >
 		
-
+		<p>Retrieved quote premium is <?php echo "$quote"; ?>&pound;</p >
 		<div id="footer">
 			
 		</div>

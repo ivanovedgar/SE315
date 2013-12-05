@@ -127,8 +127,8 @@ return $formData;
 	
 <div id="menu">
 <ul>
-	<li><a href="index.html" title="Will open home page">Home</a></li>
-	<li><a href="retrivequote.html" title="Will open page to retrive quotation">Retrieve Quotation</a></li>
+	<li><a href="index.php" title="Will open home page">Home</a></li>
+	<li><a href="retrievequote.php" title="Will open page to retrive quotation">Retrieve Quotation</a></li>
 </ul>
 </div>
 
@@ -138,7 +138,7 @@ return $formData;
 	
 		<h1><a>Quote</a></h1>
 		
-		<p>Quote premium is <?php echo "$quote"; ?></p >
+		<p>Quote premium is <?php echo "$quote"; ?>&pound;</p >
 		
 		<form method="post" action="identifier.php">
 		  

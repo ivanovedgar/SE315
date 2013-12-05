@@ -8,15 +8,12 @@
 <script type="text/javascript" src="calendar.js"></script>
 </head>
 
-
-
 <body id="main_body" >
-	
-	
+		
 <div id="menu">
 <ul>
-	<li><a href="index.html" title="Will open home page">Home</a></li>
-	<li><a href="retrivequote.html" title="Will open page to retrive quotation">Retrieve Quotation</a></li>
+	<li><a href="index.php" title="Will open home page">Home</a></li>
+	<li><a href="retrievequote.php" title="Will open page to retrive quotation">Retrieve Quotation</a></li>
 </ul>
 </div>
 
@@ -441,7 +438,7 @@
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="751279" />
 			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Request quote premium" />
 		</li>
 			</ul>
 		</form>	
