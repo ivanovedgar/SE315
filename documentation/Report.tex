@@ -31,6 +31,7 @@
 \setcounter{secnumdepth}{0} % sections are level 1
 \renewcommand{\thesection}{}
 \makeatother
+
 \begin{document}
 \title{SE31520 Assignment: Car Insurance System}
 \author{Edgar Ivanov\\ edi@aber.ac.uk \\ Department of Computer Science, Aberystwyth University}
@@ -49,8 +50,6 @@ There was a task to implement prototype system which would allow a user request 
 Broker and underwriter applications were developed using different technologies. For the broker I have used PHP and the underwriter had to be developed using ROR. It is a grate example of the interoperability, when applications can communicate with each other despite the fact that they are written in different programming languages and running on the different platforms. In this document I will describe design of the broker and underwriter systems, testing strategy and include self evaluation section.  
 
 \section{Architecture of the underwriter}
-
-
 %Write a section on the architecture of the underwriter application and
 %rationale for decisions made. As part of this, produce a UML
 %diagram(s) that shows the architecture of your application. The design
@@ -69,7 +68,7 @@ Figure ~\ref{fig:DatabaseDesign} shows database design used to store data about 
 \label{fig:DatabaseDesign}
 \end{figure}
 
-On the figure ~\ref{fig:ClassDesign} there is class digram of the underwriter application. 
+On the figure ~\ref{fig:ClassDesign} there is class diagram of the underwriter application. It is intended to be used as business-to-business application where all requests to it are automated and submitted by some kind of application. As you can see there is nothing under view since it responds only to data encoded in JSON format (HTML support was left for the debugging purpose to see what is held in the database, but in production mode it would be removed).  To create new user broker submits PUT request to the \textit{/users/new.json} address, users controller handles this request and as a response it sends back ID that was assigned to that user encoded as JSON. I used ID field in users table as unique reference number for the later quote retrieval. ID field is handled by rails and is guaranteed to be unique across al users so it is appropriate way to identify user in the future when the quote needs to be redisplayed.
 
 \begin{figure}[H]
 \centering
