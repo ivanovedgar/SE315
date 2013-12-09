@@ -1,5 +1,5 @@
 <?php
-
+# This page retrieves and redisplayes quote premium.
 $userID = $_POST[quotationNumber];
 $email = $_POST[email];
 

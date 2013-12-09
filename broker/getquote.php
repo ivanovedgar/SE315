@@ -1,4 +1,7 @@
 <?php
+# code in this file sends customer data formatted as JSON to the underwriter
+# and retrieves quote premium which is the displayed to the user.
+
 $userDataFromForm = det_data_and_form_array();
 $data_json = json_encode($userDataFromForm); //encodes array as a json.
 #echo "Formed jason is: $data_string <br>\r\n" ;
@@ -97,17 +100,7 @@ function det_data_and_form_array() //gets, forms and returns array with the data
 	"policyStartDate" => "$policyStartDateY-$policyStartDateM-$policyStartDateD","numberOfIncidents" => "$numberOfIncidents","policyExcess" => "$policyExcess",
 	"breakdownCover" => "$breakdownCover");
 return $formData;
-}
-	
-     #debugging
-	/*echo "Titile: $title Name: $name Surname: $surname Email: $email <br>";
-	echo "DOB month, day, year is: $DOBm $DOBd $DOBy <br>";
-	echo "Telephone number is $telephoneNumber <br>";
-	echo "Street address: $streetAddress address Line2: $addressLine2 City: $city Stat: $stateProvinceRegion Postal: $postal Country: $country <br>";
-	echo "Current License Type: $currentLicenseType License Period: $licensePeriod Occupation: $occupation <br>";
-	echo "Vehicle Registration: $vehicleRegistration Estimated Annual Milage: $estimatedAnnualMileage Estimated Vehicle Value: $estimatedVehicleValue Typical parking location: $typicalParkingLocation <br>";
-	echo "Policy  start month, day, year is: $policyStartDateM $policyStartDateD $policyStartDateY <br>";
-	echo " Number of incindents: $numberOfIncidents Policy Excess: $policyExcess Breakdown Cover: $breakdownCover";*/
+}  
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
